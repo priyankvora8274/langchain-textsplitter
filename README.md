@@ -13,7 +13,7 @@ A hands-on collection of examples exploring **text splitting (chunking)** in Lan
 
 *Folder names are preserved exactly as they appear in this repository.*
 
-## 🧩 Text Splitting Concepts
+## Text Splitting Concepts
 
 - **Chunk size:** Maximum target length of each chunk, measured in characters, tokens, or another unit depending on the splitter.
 - **Chunk overlap:** Repeated content between adjacent chunks to reduce loss of context at boundaries.
@@ -22,7 +22,7 @@ A hands-on collection of examples exploring **text splitting (chunking)** in Lan
 
 Smaller chunks can improve retrieval precision but may lose context; larger chunks preserve more context but can include irrelevant material. Overlap helps with continuity but increases storage and embedding costs.
 
-## 🔍 Splitting Techniques
+## Splitting Techniques
 
 ### 1. Length-Based Splitting
 
@@ -64,7 +64,7 @@ Smaller chunks can improve retrieval precision but may lose context; larger chun
 
 **Limitations:** More computationally expensive; chunk sizes are less predictable; quality depends on the embedding model and boundary thresholds.
 
-## ⚖️ Quick Comparison
+## Quick Comparison
 
 | Approach | Main strength | Main trade-off |
 |---|---|---|
@@ -75,14 +75,14 @@ Smaller chunks can improve retrieval precision but may lose context; larger chun
 
 **Choosing a method:** Start with recursive length-based splitting for general text; prefer structure-aware splitting for well-formatted documents, language-aware splitting for code, and semantic splitting when topic boundaries are particularly important.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - LangChain and LangChain Text Splitters
 - Embedding models (for semantic splitting)
 - Optional model integrations including OpenAI, Anthropic, Google, and Hugging Face, as listed in `requirements.txt`
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/priyankvora8274/langchain-textsplitter.git
